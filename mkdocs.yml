@@ -1,4 +1,5 @@
 site_name: Fractone
+use_directory_urls: false
 
 nav:
   - Home: 'index.md'
