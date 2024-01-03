@@ -1,0 +1,40 @@
+site_name: Fractone
+
+nav:
+  - Home: 'index.md'
+  - 'updates.md'
+  - 'introduction.md'
+  - 'world-menu.md'
+  - 'synthesizer.md'
+  - 'sequencer.md'
+  - Credits: 'credits.md'
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: blue
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: blue
+      accent: orange
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+plugins:
+  - i18n:
+      languages:
+        - locale: ja
+          default: true
+          name: 日本語
+          build: true
+          nav_translations:
+            Home: ホーム
+            Credits: クレジット
+        - locale: en
+          name: English
+          build: true
