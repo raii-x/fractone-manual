@@ -50,7 +50,6 @@ You can configure settings related to waveforms.
         * NOISE: Mix noise at the sampling position of the waveform
     * AMOUNT: Amount of warp effect
 
-
 The top screen shows the waveform processing flow and the output waveform after WARP is applied on each waveform.
 
 ## FILTER | SHAPER
