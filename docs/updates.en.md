@@ -1,5 +1,7 @@
 # Updates
 
+* 2024/1/7
+    * Added NOISE to the WARP TYPE in WAVEFORM
 * 2023/12/31
     * Added the manual in the world
 * 2023/12/4
