@@ -47,6 +47,7 @@ You can configure settings related to waveforms.
         * DOWNSMP: Reduce the sampling frequency of the waveform
         * PM: Phase modulation from the other waveform
         * RM: Ring modulation from the other waveform
+        * NOISE: Mix noise at the sampling position of the waveform
     * AMOUNT: Amount of warp effect
 
 
