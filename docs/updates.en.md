@@ -1,5 +1,8 @@
 # Updates
 
+* 2024/6/13
+    * Increased the number of available Instruments to 16
+    * Shortened the length of saved data when the waveform has not been changed from the preset
 * 2024/1/7
     * Added NOISE to the WARP TYPE in WAVEFORM
 * 2023/12/31

@@ -32,7 +32,7 @@ By assigning modulation to a parameter, you can automatically move the value of 
 
 You can configure settings related to waveforms.
 
-* SINE/TRIANGLE/SAW/SQUARE: Change the waveform
+* SINE/TRIANGLE/SAW/SQUARE: Select a preset waveform
 * LEVEL: Volume loudness of the waveform
 * RATIO: Frequency multiplier of waveform
 * PHASE: Phase of the waveform
@@ -49,6 +49,9 @@ You can configure settings related to waveforms.
         * RM: Ring modulation from the other waveform
         * NOISE: Mix noise at the sampling position of the waveform
     * AMOUNT: Amount of warp effect
+
+When a preset waveform is in use, the waveform display on the panel is dimmed.
+In this case, the preset number is recorded in the save data instead of the waveform data, thus shortening the length of the save data.
 
 The top screen shows the waveform processing flow and the output waveform after WARP is applied on each waveform.
 
