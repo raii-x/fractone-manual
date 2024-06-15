@@ -1,5 +1,7 @@
 # Updates
 
+* 2024/6/16
+    * Fixed a problem that the world menu had an unclickable area when on the desktop
 * 2024/6/13
     * Increased the number of available Instruments to 16
     * Shortened the length of saved data when the waveform has not been changed from the preset
