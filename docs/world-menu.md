@@ -33,3 +33,6 @@ SAVEタブで出力したデータをテキストボックスに貼り付ける�
 * Instrument: 現在編集中のInstrumentを出力します。
 * WAV1, WAV2: 波形データを出力します。
 * Sequence: シーケンサーの編集データを出力します。
+
+Auto Saveをオンにすると、2分ごとに自動的にSongのセーブデータがVRChatのログに出力されます。
+ログは `C:\Users\%USERNAME%\AppData\LocalLow\VRChat\VRChat` の中の `output_log_` から始まる名前のファイルに保存されます。

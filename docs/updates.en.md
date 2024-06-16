@@ -1,6 +1,7 @@
 # Updates
 
 * 2024/6/16
+    * Added auto save function
     * Fixed a problem that the world menu had an unclickable area when on the desktop
 * 2024/6/13
     * Increased the number of available Instruments to 16
