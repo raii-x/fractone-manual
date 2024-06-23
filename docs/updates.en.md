@@ -1,5 +1,12 @@
 # Updates
 
+* 2024/6/23
+    * The playback position is now synchronized with the person who joined after the sequencer playback
+    * For LFOs with Trigger turned off, the phase is reset when the sequencer is played from the beginning, and the phase is set so that when the sequencer is played from the middle, the phase is the same as when it was played from the beginning
+    * Changed so that when the next pattern is played, the part of the pattern after the end position of the previously played pattern is not played
+    * Changed so that notes after the end of the loop are not played when returning from the loop end position to the loop start position
+    * Fixed a problem where the cursor was not visible when the cursor was moved to the end of the sequencer
+    * Fixed an error when pasting in the sequencer when the position of the pasted content exceeds the end position
 * 2024/6/16
     * Added auto save function
     * Fixed a problem that the world menu had an unclickable area when on the desktop
