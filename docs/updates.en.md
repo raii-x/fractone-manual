@@ -1,5 +1,7 @@
 # Updates
 
+* 2024/6/24
+    * Added track mute and solo functions to the sequencer
 * 2024/6/23
     * The playback position is now synchronized with the person who joined after the sequencer playback
     * For LFOs with Trigger turned off, the phase is reset when the sequencer is played from the beginning, and the phase is set so that when the sequencer is played from the middle, the phase is the same as when it was played from the beginning

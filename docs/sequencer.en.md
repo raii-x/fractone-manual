@@ -57,6 +57,8 @@ To select a panel, press the left grip shortly and then enter the left stick in 
 
 - Left grip + Left stick ←: Set the start of the loop section
 - Left grip + Left stick →: Set the end of the loop section
+- Left grip + Left stick ↓: Mute track
+- Left grip + Left stick ↑: Solo track
 
 ### Operations in Edit panel
 
@@ -81,7 +83,9 @@ Next to the pencil icon, the values previously written in the Arrangement and Ed
 
 Patterns can be arranged on the timeline to create a song structure.
 
+At the top, the track number is displayed if the track is not muted, or "M" if the track is muted.
 Patterns are displayed as hexadecimal numbers.
+
 Songs are played and stopped at the cursor position in Arrangement panel.
 The loop section when playing a song is also specified in Arrangement panel.
 
