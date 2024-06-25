@@ -59,6 +59,7 @@ To select a panel, press the left grip shortly and then enter the left stick in 
 - Left grip + Left stick →: Set the end of the loop section
 - Left grip + Left stick ↓: Mute track
 - Left grip + Left stick ↑: Solo track
+- Right trigger short press: Select the pattern on or above the cursor and go to Edit panel
 
 ### Operations in Edit panel
 

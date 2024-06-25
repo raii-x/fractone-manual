@@ -1,5 +1,8 @@
 # Updates
 
+* 2024/6/25
+    * Added a function to edit the pattern on the cursor in the Arrange panel of the sequencer
+    * Changed to be able to zoom to 1/96 in the Arrange panel of the sequencer
 * 2024/6/24
     * Added track mute and solo functions to the sequencer
     * Changed so that note-off is performed as it was before the 2024/6/23 update, when note-off is at the following positions
