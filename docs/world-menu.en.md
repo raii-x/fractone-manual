@@ -36,3 +36,14 @@ Pressing the button corresponding to each data will output the data as text in a
 
 When Auto Save is enabled, Song save data is automatically output to the VRChat log every 2 minutes.
 The log will be saved in a file named starting with `output_log_` in `C:\Users\%USERNAME%\AppData\LocalLow\VRChat\VRChat`.
+
+## UTILITY tab
+
+For Instrument and Pattern, you can either swap or copy between the two items.
+
+Select whether to target Instrument or Pattern on the tabs at the top.
+Specify the two numbers to be targeted in "From" and "To".
+
+Press the Swap button to swap the items specified in "From" and "To".
+In this case, in the case of Instrument, the Instrument number specified in Pattern is also swapped, and in the case of Pattern, the Pattern number specified in Track is also swapped.
+When the Copy button is pressed, the item specified in "From" is copied to "To".

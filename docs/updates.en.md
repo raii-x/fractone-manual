@@ -1,5 +1,7 @@
 # Updates
 
+* 2024/6/29
+    * Added UTILITY tab to the world menu
 * 2024/6/25
     * Added a function to edit the pattern on the cursor in the Arrange panel of the sequencer
     * Changed to be able to zoom to 1/96 in the Arrange panel of the sequencer

@@ -36,3 +36,14 @@ SAVEタブで出力したデータをテキストボックスに貼り付ける�
 
 Auto Saveをオンにすると、2分ごとに自動的にSongのセーブデータがVRChatのログに出力されます。
 ログは `C:\Users\%USERNAME%\AppData\LocalLow\VRChat\VRChat` の中の `output_log_` から始まる名前のファイルに保存されます。
+
+## UTILITYタブ
+
+InstrumentとPatternについて、2つの項目の間で交換かコピーを行うことができます。
+
+上部のタブでInstrumentとPatternのどちらを対象にするかを選択します。
+FromとToで対象とする2つの番号を指定します。
+
+Swapボタンを押すと、FromとToで指定した項目を入れ替えます。
+この際、Instrumentの場合はPatternで指定されたInstrument番号も入れ替わり、Patternの場合はトラックで指定されたPattern番号も入れ替わります。
+Copyボタンを押すと、Fromで指定した項目をToへコピーします。
