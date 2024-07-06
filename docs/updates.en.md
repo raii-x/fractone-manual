@@ -1,5 +1,9 @@
 # Updates
 
+* 2024/7/6
+    * Increased the number of available tracks to 16 and the number of patterns to 64
+    * Added manual channel assignment function to the sequencer
+    * Fixed the problem that the Instrument number displayed when changing the edit pattern in the sequencer was a decimal number
 * 2024/6/29
     * Added UTILITY tab to the world menu
 * 2024/6/25

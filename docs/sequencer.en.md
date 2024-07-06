@@ -14,7 +14,7 @@ The sequencer has several panels: Settings panel on the top, Arrangement panel o
 Of these, controller inputs are made to the currently selected panel.
 The currently selected panel is indicated by a red frame.
 
-A song consists of 8 tracks and 32 patterns.
+A song consists of 16 tracks and 64 patterns.
 Patterns allow notes to be placed on the timeline, and tracks allow patterns to be placed on the timeline.
 Basically, a single phrase of a song is used as a pattern, and multiple patterns are combined to create the composition of the song.
 Tracks are created on Arrangement panel, and patterns are created on Edit panel.
@@ -79,6 +79,7 @@ Next to the pencil icon, the values previously written in the Arrangement and Ed
 - INSTRUMENT: Instrument number used in the pattern
 - ZOOM (right side): Zoom in Edit panel
 - KEY: Transpose for note display only
+- CHANNEL: Whether channel assignment is done automatically or manually (see below for details)
 
 ## Arrangement panel
 
@@ -104,3 +105,15 @@ A note sounded in note-on will continue to sound until a note-off or another not
 Note-ons consist of pitch and velocity, with pitch displayed as a note name and octave, such as "C-4," and velocity displayed as a number from 00 to 7F in hexadecimal.
 Note-offs are displayed as "off".
 If you omit the velocity of a note, the velocity will be the same as if you had specified 7F.
+
+## Channel Assignment
+
+In Fractone, the audio source to which the sound to be played is assigned is called a channel.
+Fractone has 16 channels, so up to 16 notes can be sounded simultaneously.
+
+When a note is played on the keyboard or when CHANNEL is set to AUTO on the sequencer's Settings panel, the note to be played is automatically assigned to an available channel.
+However, the effects used for tones can affect the sound even after the sound has finished sounding, and if tones with different effects are assigned to the same channel after sounding, the sound may have undesired effects.
+In such a case, you can specify the channel to be manually assigned to the sound by specifying CHANNEL to MANUAL in the Settings panel.
+
+When using manual channel assignment, the channel number assigned to notes played within a pattern placed on a track is the remainder of (track number + column number in the pattern) divided by 16.
+For example, a pattern placed on track 1 would be assigned to channels 1, 2, 3, ... from the left column, and a pattern placed on track 15 (F on the sequencer display) would be assigned to channels 15, 0, 1, ... from the left column.
