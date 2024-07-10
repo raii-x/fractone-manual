@@ -23,11 +23,11 @@ Tracks are created on Arrangement panel, and patterns are created on Edit panel.
 
 On the desktop, VR operation and keyboard operation correspond as follows.
 
-- Left stick: WASD
-- Right stick: Arrow keys
-- Left/right trigger: Left/right Shift
-- Left/right grip: Left/right Ctrl or left/right Alt
-- Rotate controller: Mouse up/down
+* Left stick: WASD
+* Right stick: Arrow keys
+* Left/right trigger: Left/right Shift
+* Left/right grip: Left/right Ctrl or left/right Alt
+* Rotate controller: Mouse up/down
 
 ## Operations
 
@@ -35,35 +35,35 @@ To select a panel, press the left grip shortly and then enter the left stick in 
 
 ### Operations common to all panels
 
-- Left trigger short press: Play/Stop
-- Left grip short press: Start panel selection
-- Left stick: Move cursor
-- Right stick ←→: Increase or decrease the value of an item
-- Right stick ↑↓: Increase or decrease the value of an item significantly
+* Left trigger short press: Play/Stop
+* Left grip short press: Start panel selection
+* Left stick: Move cursor
+* Right stick ←→: Increase or decrease the value of an item
+* Right stick ↑↓: Increase or decrease the value of an item significantly
 
 ### Operations common to both Arrangement and Edit panels
 
-- Right grip: Delete value on cursor
-- Right trigger long press: Get the value on the cursor
-- Right trigger + Rotate right Controller: Increase or decrease the value according to the rotation
-- Left grip + Right stick ←: Start/end range selection
-- Left grip + Right stick ↓: Cut
-- Left grip + Right stick →: Copy
-- Left grip + Right stick ↑: Paste
-- Left trigger + Rotate left controller: Move cursor according to rotation
-- Left grip + Left trigger + Rotate left controller: Change zoom according to rotation
+* Right grip: Delete value on cursor
+* Right trigger long press: Get the value on the cursor
+* Right trigger + Rotate right Controller: Increase or decrease the value according to the rotation
+* Left grip + Right stick ←: Start/end range selection
+* Left grip + Right stick ↓: Cut
+* Left grip + Right stick →: Copy
+* Left grip + Right stick ↑: Paste
+* Left trigger + Rotate left controller: Move cursor according to rotation
+* Left grip + Left trigger + Rotate left controller: Change zoom according to rotation
 
 ### Operations in Arrangement panel
 
-- Left grip + Left stick ←: Set the start of the loop section
-- Left grip + Left stick →: Set the end of the loop section
-- Left grip + Left stick ↓: Mute track
-- Left grip + Left stick ↑: Solo track
-- Right trigger short press: Select the pattern on or above the cursor and go to Edit panel
+* Left grip + Left stick ←: Set the start of the loop section
+* Left grip + Left stick →: Set the end of the loop section
+* Left grip + Left stick ↓: Mute track
+* Left grip + Left stick ↑: Solo track
+* Right trigger short press: Select the pattern on or above the cursor and go to Edit panel
 
 ### Operations in Edit panel
 
-- Right trigger short press: Insert note off or effect command
+* Right trigger short press: Insert note off or effect command
 
 ## Settings panel
 
@@ -73,13 +73,13 @@ Next to the pencil icon, the values previously written in the Arrangement and Ed
 
 ### Setting items
 
-- BPM: Song tempo
-- ZOOM (left side): Zoom in Arrangement panel
-- PATTERN: Pattern to be edited
-- INSTRUMENT: Instrument number used in the pattern
-- ZOOM (right side): Zoom in Edit panel
-- KEY: Transpose for note display only
-- CHANNEL: Whether channel assignment is done automatically or manually (see below for details)
+* BPM: Song tempo
+* ZOOM (left side): Zoom in Arrangement panel
+* PATTERN: Pattern to be edited
+* INSTRUMENT: Instrument number used in the pattern
+* ZOOM (right side): Zoom in Edit panel
+* KEY: Transpose for note display only
+* CHANNEL: Whether channel assignment is done automatically or manually (see below for details)
 
 ## Arrangement panel
 
@@ -115,30 +115,30 @@ Effect commands have an effect type and an effect amount, where the effect type 
 
 #### Effect Type
 
-- D (pitch slide Down): lowers the pitch of the note
-- U (pitch slide Up): Raises the pitch of the note
-- G (Glide): Smoothly changes the pitch of an already sounding note from one pitch to another
+* D (pitch slide Down): lowers the pitch of the note
+* U (pitch slide Up): Raises the pitch of the note
+* G (Glide): Smoothly changes the pitch of an already sounding note from one pitch to another
 
 #### Effect amount
 
 The effect amount represents the speed of the pitch change.
 
-- 0: Stop pitch change for pitch up and pitch down, change the pitch to the note immediately for glide
-- 1: 1 semitone/quarter note
-- 2: 1.5 semitones/quarter note
-- 3: 2 semitones/quarter note
-- 4: 3 semitones/quarter note
-- 5: 4 semitones/quarter note
-- 6: 6 semitones/quarter note
-- 7: 8 semitones/quarter note
-- 8: 12 semitones/quarter note
-- 9: 16 semitones/quarter note
-- A: 24 semitones/quarter note
-- B: 32 semitones/quarter note
-- C: 48 semitones/quarter note
-- D: 64 semitones/quarter note
-- E: 96 semitones/quarter note
-- F: 128 semitones/quarter note
+* 0: Stop pitch change for pitch up and pitch down, change the pitch to the note immediately for glide
+* 1: 1 semitone/quarter note
+* 2: 1.5 semitones/quarter note
+* 3: 2 semitones/quarter note
+* 4: 3 semitones/quarter note
+* 5: 4 semitones/quarter note
+* 6: 6 semitones/quarter note
+* 7: 8 semitones/quarter note
+* 8: 12 semitones/quarter note
+* 9: 16 semitones/quarter note
+* A: 24 semitones/quarter note
+* B: 32 semitones/quarter note
+* C: 48 semitones/quarter note
+* D: 64 semitones/quarter note
+* E: 96 semitones/quarter note
+* F: 128 semitones/quarter note
 
 ## Channel Assignment
 
