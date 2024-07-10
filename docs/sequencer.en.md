@@ -117,7 +117,7 @@ Effect commands have an effect type and an effect amount, where the effect type 
 
 * D (pitch slide Down): lowers the pitch of the note
 * U (pitch slide Up): Raises the pitch of the note
-* G (Glide): Smoothly changes the pitch of an already sounding note from one pitch to another
+* G (Glide): Smoothly changes the pitch of the note already sounded to the pitch of the note for which this effect is specified
 
 #### Effect amount
 
