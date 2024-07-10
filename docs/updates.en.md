@@ -2,7 +2,7 @@
 
 * 2024/7/10
     * Added behavior in the sequencer where a note with an empty pitch and velocity only changes the velocity of a note that is already sounding
-    * Added pattern effect commands (Pitch slide down, Pitch slide up, Glide)
+    * Added pattern effect commands to the sequencer (Pitch slide down, Pitch slide up, Glide)
 * 2024/7/6
     * Increased the number of available tracks to 16 and the number of patterns to 64
     * Added manual channel assignment function to the sequencer
