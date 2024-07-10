@@ -63,7 +63,7 @@ To select a panel, press the left grip shortly and then enter the left stick in 
 
 ### Operations in Edit panel
 
-- Right trigger short press: Insert note off
+- Right trigger short press: Insert note off or effect command
 
 ## Settings panel
 
@@ -105,6 +105,40 @@ A note sounded in note-on will continue to sound until a note-off or another not
 Note-ons consist of pitch and velocity, with pitch displayed as a note name and octave, such as "C-4," and velocity displayed as a number from 00 to 7F in hexadecimal.
 Note-offs are displayed as "off".
 If you omit the velocity of a note, the velocity will be the same as if you had specified 7F.
+A note with an empty pitch and velocity only changes the velocity of the already sounding note.
+
+### Effects Commands
+
+You can insert an effect command by briefly pressing the right trigger while the cursor is on velocity.
+Effect commands are commands to apply special effects to notes.
+Effect commands have an effect type and an effect amount, where the effect type is a single letter of the alphabet and the effect amount is a hexadecimal number from 0 to F.
+
+#### Effect Type
+
+- D (pitch slide Down): lowers the pitch of the note
+- U (pitch slide Up): Raises the pitch of the note
+- G (Glide): Smoothly changes the pitch of an already sounding note from one pitch to another
+
+#### Effect amount
+
+The effect amount represents the speed of the pitch change.
+
+- 0: Stop pitch change for pitch up and pitch down, change the pitch to the note immediately for glide
+- 1: 1 semitone/quarter note
+- 2: 1.5 semitones/quarter note
+- 3: 2 semitones/quarter note
+- 4: 3 semitones/quarter note
+- 5: 4 semitones/quarter note
+- 6: 6 semitones/quarter note
+- 7: 8 semitones/quarter note
+- 8: 12 semitones/quarter note
+- 9: 16 semitones/quarter note
+- A: 24 semitones/quarter note
+- B: 32 semitones/quarter note
+- C: 48 semitones/quarter note
+- D: 64 semitones/quarter note
+- E: 96 semitones/quarter note
+- F: 128 semitones/quarter note
 
 ## Channel Assignment
 
