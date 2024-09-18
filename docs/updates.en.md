@@ -1,5 +1,8 @@
 # Updates
 
+* 2024/9/19
+    * Fixed a problem where the input threshold for grips in the sequencer was at a shallow position when using the Index controllers
+    * Fixed a problem where plugs could no longer be dropped with the Quest and Index controllers
 * 2024/7/10
     * Added behavior in the sequencer where a note with an empty pitch and velocity only changes the velocity of a note that is already sounding
     * Added effect commands to the sequencer (Pitch slide down, Pitch slide up, Glide)
