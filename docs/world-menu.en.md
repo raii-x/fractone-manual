@@ -22,8 +22,7 @@ Configures settings related to the world.
 Data can be loaded by pasting the data output on the EXPORT tab into the text box.
 After pasting the data into the text box, press the Load button to complete loading.
 
-In case of an error, error text will be displayed in the text box.
-In that case, delete the error text before pasting it into the text box.
+In case of an error, error message will be displayed in the dialog.
 
 ## EXPORT tab
 
