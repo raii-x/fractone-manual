@@ -1,5 +1,9 @@
 # Updates
 
+* 2025/7/15
+    * Added save/load functionality using Persistence
+    * Improved synchronization stability
+    * Improved timing accuracy of world keyboard and MIDI input synchronization
 * 2024/9/19
     * Fixed a problem where the input threshold for grips in the sequencer was at a shallow position when using the Index controllers
     * Fixed a problem where plugs could no longer be dropped with the Quest and Index controllers
