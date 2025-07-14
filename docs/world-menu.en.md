@@ -17,15 +17,15 @@ Configures settings related to the world.
 * Instrument: Toggles between instruments to be edited in the synthesizer (global).
 * Sequence: Play/stop the sequencer (global).
 
-## LOAD tab
+## IMPORT tab
 
-Data can be loaded by pasting the data output on the SAVE tab into the text box.
+Data can be loaded by pasting the data output on the EXPORT tab into the text box.
 After pasting the data into the text box, press the Load button to complete loading.
 
 In case of an error, error text will be displayed in the text box.
 In that case, delete the error text before pasting it into the text box.
 
-## SAVE tab
+## EXPORT tab
 
 Pressing the button corresponding to each data will output the data as text in a text box.
 
