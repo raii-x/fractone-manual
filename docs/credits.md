@@ -4,7 +4,6 @@
 
 * UdonSharp - VRChat Inc. (MIT License)
 * QvPen - Package Shop @aivrc
-* CyanPlayerObjectPool - CyanLaser (MIT License)
 * EsnyaPBR - esnya (MIT License)
 
 ## Fonts
