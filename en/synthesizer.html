@@ -1,0 +1,936 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="world-menu.html">
+      
+      
+        <link rel="next" href="sequencer.html">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Synthesizer - Fractone</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#synthesizer" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Fractone" class="md-header__button md-logo" aria-label="Fractone" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Fractone
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Synthesizer
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../synthesizer.html" hreflang="ja" class="md-select__link">
+              日本語
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="synthesizer.html" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Fractone" class="md-nav__button md-logo" aria-label="Fractone" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Fractone
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="updates.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Updates
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="introduction.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="world-menu.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    World menu
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Synthesizer
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="synthesizer.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Synthesizer
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modulation-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      modulation assignment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#waveform" class="md-nav__link">
+    <span class="md-ellipsis">
+      WAVEFORM
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filter-shaper" class="md-nav__link">
+    <span class="md-ellipsis">
+      FILTER | SHAPER
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#envelope" class="md-nav__link">
+    <span class="md-ellipsis">
+      ENVELOPE
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      LFO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voice" class="md-nav__link">
+    <span class="md-ellipsis">
+      VOICE
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#effects" class="md-nav__link">
+    <span class="md-ellipsis">
+      EFFECTS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EFFECTS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chorus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chorus
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delay" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delay
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reverb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reverb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lpf" class="md-nav__link">
+    <span class="md-ellipsis">
+      LPF
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hpf" class="md-nav__link">
+    <span class="md-ellipsis">
+      HPF
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sequencer.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sequencer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="credits.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Credits
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modulation-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      modulation assignment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#waveform" class="md-nav__link">
+    <span class="md-ellipsis">
+      WAVEFORM
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filter-shaper" class="md-nav__link">
+    <span class="md-ellipsis">
+      FILTER | SHAPER
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#envelope" class="md-nav__link">
+    <span class="md-ellipsis">
+      ENVELOPE
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      LFO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voice" class="md-nav__link">
+    <span class="md-ellipsis">
+      VOICE
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#effects" class="md-nav__link">
+    <span class="md-ellipsis">
+      EFFECTS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EFFECTS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chorus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chorus
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delay" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delay
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reverb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reverb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lpf" class="md-nav__link">
+    <span class="md-ellipsis">
+      LPF
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hpf" class="md-nav__link">
+    <span class="md-ellipsis">
+      HPF
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="synthesizer">Synthesizer</h1>
+<p><img alt="Synthesizer" src="../images/synthesizer.png" /></p>
+<p>You can edit synthesizer parameters and create sounds.
+The synthesizer is divided into six panels, which are controlled by knobs and buttons on the panels.
+The upper screen shows the status of the synthesizer.</p>
+<p>The tone created by the synthesizer is called Instrument.
+The Instrument to be edited is the one set in the CONTROL tab of the World menu.</p>
+<h2 id="operations">Operations</h2>
+<ul>
+<li>You can change the values of synthesizer parameters by turning the knob in VR, or by dragging the mouse up and down on the knob on the desktop.</li>
+<li>Grabbing the knob twice quickly will return the parameter to its default value.</li>
+<li>You can use the pen on the WAVEFORM panel to draw waveforms. After holding the pen in the center of the panel, USE the pen tip toward the panel's waveform screen to draw a waveform.</li>
+</ul>
+<h3 id="modulation-assignment">modulation assignment</h3>
+<p><img alt="Modulation" src="../images/modulation.png" /></p>
+<p>By assigning modulation to a parameter, you can automatically move the value of the parameter while tones are playing.</p>
+<ul>
+<li>Grab the hole with the light coming out of it next to ENV1, LFO1, etc., and a plug will appear in your hand. In this state, you can assign modulation by performing the following operations.<ul>
+<li>In VR, let the plug touch the jack to the right of the knob.</li>
+<li>On the desktop, align the reticle with the jack hole to the right of the knob and click.</li>
+</ul>
+</li>
+<li>After assignment, the amount of modulation can be changed by turning the plug in the same way as the knob.</li>
+<li>To unassign a modulation, pull out the plug in VR or move back while grabbing the plug in desktop.</li>
+<li>Up to 16 modulations can be assigned.</li>
+</ul>
+<h2 id="waveform">WAVEFORM</h2>
+<p>You can configure settings related to waveforms.</p>
+<ul>
+<li>SINE/TRIANGLE/SAW/SQUARE: Select a preset waveform</li>
+<li>LEVEL: Volume loudness of the waveform</li>
+<li>RATIO: Frequency multiplier of waveform</li>
+<li>PHASE: Phase of the waveform</li>
+<li>WARP: Set the warp effect to deform the waveform<ul>
+<li>TYPE: Type of warp effect<ul>
+<li>SYNC: Oscillator sync</li>
+<li>BEND: Distorts the waveform, shrinking it to the center or stretching it from the center</li>
+<li>PWM: Shrinks the waveform toward the center</li>
+<li>ASYM: Move the center of the waveform left or right</li>
+<li>FLIP: Flip part of the waveform upside down</li>
+<li>MIRROR: Align the original waveform and the inverted waveform left and right, and move the center of the each waveforms left and right</li>
+<li>DOWNSMP: Reduce the sampling frequency of the waveform</li>
+<li>PM: Phase modulation from the other waveform</li>
+<li>RM: Ring modulation from the other waveform</li>
+<li>NOISE: Mix noise at the sampling position of the waveform</li>
+</ul>
+</li>
+<li>AMOUNT: Amount of warp effect</li>
+</ul>
+</li>
+</ul>
+<p>When a preset waveform is in use, the waveform display on the panel is dimmed.
+In this case, the preset number is recorded in the save data instead of the waveform data, thus shortening the length of the save data.</p>
+<p>The top screen shows the waveform processing flow and the output waveform after WARP is applied on each waveform.</p>
+<h2 id="filter-shaper">FILTER | SHAPER</h2>
+<p>Filters (FLT) and shapers (SHP) can be applied to the waveform.</p>
+<ul>
+<li>INPUT: Specifies which waveforms are input for the FLT1 and FLT2 inputs. WAV1 and WAV2 are bypassed to FLTs if not input to either FLT and mixed at the end. SHP1 is input to FLT2 if it is on and mixed at the end if it is off.</li>
+<li>FLT1/FLT2:<ul>
+<li>TYPE: Filter type<ul>
+<li>LP: Low pass filter</li>
+<li>HP: High pass filter</li>
+<li>BP: Band pass filter</li>
+<li>NOTCH: Notch filter</li>
+</ul>
+</li>
+<li>CUTOFF: Cutoff frequency of the filter</li>
+<li>RESONANCE: Resonance value of the filter</li>
+</ul>
+</li>
+<li>SHP1/SHP2: Shaper shaping frequency<ul>
+<li>TYPE: Shaper type<ul>
+<li>SOFT CLIP: Smoothly clips the waveform at the top and bottom</li>
+<li>HARD CLIP: Clips the waveform vertically above and below the peak</li>
+<li>LIN. FOLD: Folds the waveform vertically</li>
+<li>SINE FOLD: Folding by applying a sine function to the waveform</li>
+<li>BITCRUSH: Lower the number of quantization bits in the waveform</li>
+<li>DOWNSMP: Reduce the sampling frequency of the waveform</li>
+</ul>
+</li>
+<li>AMOUNT: Strength of the shaper effect</li>
+<li>MIX: Amount of mix between the original waveform and the waveform after the shaper is applied</li>
+</ul>
+</li>
+</ul>
+<p>The upper screen shows the processing flow of the applied filter and shaper, as well as a graph showing the frequency response of the filter and the relationship between the input and output of the shaper.</p>
+<h2 id="envelope">ENVELOPE</h2>
+<p>ENVELOPE generates modulations that change with time from note on and note off.
+Three envelopes are available in Fractone.
+ENV1 by default modulates for the VOLUME of the VOICE.</p>
+<ul>
+<li>A: Attack Time. The time it takes for the modulation value to go from 0 to the maximum value immediately after note on.</li>
+<li>H: Hold time. The time after attack that the modulation value remains at its maximum value.</li>
+<li>D: Decay time. The time from the maximum modulation value to the sustain value after a hold.</li>
+<li>S: Sustain value. The modulation value after decay.</li>
+<li>R: Release time. Time from note off until the modulation value reaches 0.</li>
+</ul>
+<p>The upper screen shows a graph of the modulation value versus time for each envelope.
+The unfilled portion of the graph represents the release section.</p>
+<h2 id="lfo">LFO</h2>
+<p>The LFO (Low Frequency Oscillator) produces a periodically changing modulation.
+Two LFOs are available in Fractone.</p>
+<ul>
+<li>SHAPE: Selects the waveform of the LFO.</li>
+<li>TRIGGER: Specifies whether the phase of the LFO waveform is reset when a sound is played.</li>
+<li>FREQUENCY: Frequency of the LFO waveform.</li>
+<li>AMOUNT: Amount of LFO effect.</li>
+</ul>
+<p>The top screen shows the status of each LFO waveform.</p>
+<h2 id="voice">VOICE</h2>
+<p>You can make settings related to the sound source.</p>
+<ul>
+<li>VOLUME: Sound volume</li>
+<li>TRANSPOSE: Changes the pitch in a range of 2 octaves up or down</li>
+<li>TUNE: Changes the pitch by one semitone up or down</li>
+<li>PAN: Sets the panning of the sound</li>
+<li>SPATIAL: Amount of stereophonic sound effect, corresponds to the Spatial property of Unity's AudioSource.</li>
+<li>SPREAD: The spread of the sound when the stereophonic sound effect is applied, corresponding to the Spread property of Unity's AudioSource.</li>
+<li>AZIMUTH: Azimuth angle of the sound source location</li>
+<li>ELEVATION: Elevation angle of sound source location</li>
+<li>DISTANCE: Distance of the sound source from the center</li>
+<li>Modulation:<ul>
+<li>NOTE: Pitch of the note</li>
+<li>VEL: Velocity of the note</li>
+<li>RAND: Random value per note</li>
+</ul>
+</li>
+</ul>
+<h2 id="effects">EFFECTS</h2>
+<p>Audio effects can be applied to audio.
+Pressing the button with the name of each effect toggles between enabling and disabling the effect.
+The effects are implemented by Unity's Audio Filter component.</p>
+<h3 id="chorus">Chorus</h3>
+<p>Applies a chorus effect to audio.
+Corresponds to Unity's AudioChorusFilter.</p>
+<ul>
+<li>DELAY: Delay between the original sound and the sound after chorus is applied, corresponding to AudioChorusFilter.delay.</li>
+<li>RATE: Frequency of chorus modulation, corresponds to AudioChorusFilter.rate.</li>
+<li>DEPTH: Depth of modulation in chorus, corresponds to AudioChorusFilter.depth.</li>
+<li>MIX: The amount of mix between the original and the chorus applied, corresponding to dryMix, wetMix1, wetMix2, and wetMix3 of AudioChorusFilter.</li>
+</ul>
+<h3 id="delay">Delay</h3>
+<p>Applies a delay effect to audio.
+Corresponds to AudioEchoFilter of Unity.</p>
+<ul>
+<li>TIME: Delay from the original sound to the delayed sound, corresponding to AudioEchoFilter.delay.</li>
+<li>FEEDBACK: Decay ratio per delay, corresponds to AudioEchoFilter.decayRatio.</li>
+<li>MIX: The amount of mix between the original sound and the delayed sound, corresponding to AudioEchoFilter.dryMix and wetMix.</li>
+</ul>
+<h3 id="reverb">Reverb</h3>
+<p>Applies a reverb effect to audio.
+Corresponds to AudioReverbFilter in Unity.</p>
+<ul>
+<li>DECAY: Decay time of the reverb, corresponds to AudioReverbFilter.decayTime.</li>
+<li>DELAY: Reverb delay time, corresponds to AudioReverbFilter.reverbDelay.</li>
+<li>HF LEVEL: Volume of the high frequency component of the reverb, corresponds to AudioReverbFilter.roomHF.</li>
+<li>HF DECAY: Ratio of decay time between high and low frequency components of the reverb, corresponding to AudioReverbFilter.decayHFRatio.</li>
+<li>MIX: The amount of mix between the original sound and the reverb applied, corresponding to AudioReverbFilter's dryMix and room.</li>
+</ul>
+<h3 id="lpf">LPF</h3>
+<p>Applies a low-pass filter to the audio.
+Corresponds to AudioLowPassFilter in Unity.</p>
+<ul>
+<li>CUTOFF: Cutoff frequency, corresponds to AudioLowPassFilter.cutoffFrequency.</li>
+<li>Q: Resonance value, corresponds to AudioLowPassFilter.lowpassResonanceQ.</li>
+</ul>
+<h3 id="hpf">HPF</h3>
+<p>Applies a high-pass filter to the audio.
+Corresponds to AudioHighPassFilter in Unity.</p>
+<ul>
+<li>CUTOFF: Cutoff frequency, corresponds to AudioHighPassFilter.cutoffFrequency.</li>
+<li>Q: Resonance value, corresponds to AudioHighPassFilter.highpassResonanceQ.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

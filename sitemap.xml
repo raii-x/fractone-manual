@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>Noneindex.html</loc>
+        <lastmod>2025-07-15</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneindex.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/index.html"/>
+    </url>
+    <url>
+        <loc>Nonecredits.html</loc>
+        <lastmod>2025-07-15</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Nonecredits.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/credits.html"/>
+    </url>
+    <url>
+        <loc>Noneintroduction.html</loc>
+        <lastmod>2025-07-15</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneintroduction.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/introduction.html"/>
+    </url>
+    <url>
+        <loc>Nonesequencer.html</loc>
+        <lastmod>2025-07-15</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Nonesequencer.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/sequencer.html"/>
+    </url>
+    <url>
+        <loc>Nonesynthesizer.html</loc>
+        <lastmod>2025-07-15</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Nonesynthesizer.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/synthesizer.html"/>
+    </url>
+    <url>
+        <loc>Noneupdates.html</loc>
+        <lastmod>2025-07-15</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneupdates.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/updates.html"/>
+    </url>
+    <url>
+        <loc>Noneworld-menu.html</loc>
+        <lastmod>2025-07-15</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneworld-menu.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/world-menu.html"/>
+    </url>
+    <url>
+        <loc>Noneen/index.html</loc>
+        <lastmod>2025-07-15</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/index.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneindex.html"/>
+    </url>
+    <url>
+        <loc>Noneen/credits.html</loc>
+        <lastmod>2025-07-15</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/credits.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Nonecredits.html"/>
+    </url>
+    <url>
+        <loc>Noneen/introduction.html</loc>
+        <lastmod>2025-07-15</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/introduction.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneintroduction.html"/>
+    </url>
+    <url>
+        <loc>Noneen/sequencer.html</loc>
+        <lastmod>2025-07-15</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/sequencer.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Nonesequencer.html"/>
+    </url>
+    <url>
+        <loc>Noneen/synthesizer.html</loc>
+        <lastmod>2025-07-15</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/synthesizer.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Nonesynthesizer.html"/>
+    </url>
+    <url>
+        <loc>Noneen/updates.html</loc>
+        <lastmod>2025-07-15</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/updates.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneupdates.html"/>
+    </url>
+    <url>
+        <loc>Noneen/world-menu.html</loc>
+        <lastmod>2025-07-15</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/world-menu.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="Noneworld-menu.html"/>
+    </url>
+</urlset>

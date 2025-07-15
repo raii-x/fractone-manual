@@ -1,0 +1,929 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="synthesizer.html">
+      
+      
+        <link rel="next" href="credits.html">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Sequencer - Fractone</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sequencer" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Fractone" class="md-header__button md-logo" aria-label="Fractone" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Fractone
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Sequencer
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../sequencer.html" hreflang="ja" class="md-select__link">
+              日本語
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="sequencer.html" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Fractone" class="md-nav__button md-logo" aria-label="Fractone" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Fractone
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="updates.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Updates
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="introduction.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="world-menu.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    World menu
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="synthesizer.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Synthesizer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Sequencer
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="sequencer.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sequencer
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#operations-on-the-desktop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operations on the desktop
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operations-common-to-all-panels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operations common to all panels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operations-common-to-both-arrangement-and-edit-panels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operations common to both Arrangement and Edit panels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operations-in-arrangement-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operations in Arrangement panel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operations-in-edit-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operations in Edit panel
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settings-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Settings panel
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Settings panel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setting-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting items
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arrangement-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arrangement panel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edit-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edit panel
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Edit panel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#effects-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Effects Commands
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Effects Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#effect-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      Effect Type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#effect-amount" class="md-nav__link">
+    <span class="md-ellipsis">
+      Effect amount
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#channel-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Channel Assignment
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="credits.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Credits
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#operations-on-the-desktop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operations on the desktop
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operations-common-to-all-panels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operations common to all panels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operations-common-to-both-arrangement-and-edit-panels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operations common to both Arrangement and Edit panels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operations-in-arrangement-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operations in Arrangement panel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operations-in-edit-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operations in Edit panel
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settings-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Settings panel
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Settings panel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setting-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting items
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arrangement-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arrangement panel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edit-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edit panel
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Edit panel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#effects-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Effects Commands
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Effects Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#effect-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      Effect Type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#effect-amount" class="md-nav__link">
+    <span class="md-ellipsis">
+      Effect amount
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#channel-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Channel Assignment
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="sequencer">Sequencer</h1>
+<p>The sequencer screen on the left side of the synthesizer is where you can create a song.</p>
+<p>Fractone uses a tracker style sequencer.
+The sequencer does not use a laser pointer, but rather a controller to move the cursor and write values.</p>
+<p>When the sequencer is interacted with, both controller inputs are sent to the sequencer and normal movement operations are disabled.
+Pressing the menu button will release the sequencer input and allow normal movement.</p>
+<p><img alt="Sequencer" src="../images/sequencer.png" /></p>
+<p>The sequencer has several panels: Settings panel on the top, Arrangement panel on the left, and Edit panel on the right.
+Of these, controller inputs are made to the currently selected panel.
+The currently selected panel is indicated by a red frame.</p>
+<p>A song consists of 16 tracks and 64 patterns.
+Patterns allow notes to be placed on the timeline, and tracks allow patterns to be placed on the timeline.
+Basically, a single phrase of a song is used as a pattern, and multiple patterns are combined to create the composition of the song.
+Tracks are created on Arrangement panel, and patterns are created on Edit panel.</p>
+<h2 id="operations-on-the-desktop">Operations on the desktop</h2>
+<p>On the desktop, VR operation and keyboard operation correspond as follows.</p>
+<ul>
+<li>Left stick: WASD</li>
+<li>Right stick: Arrow keys</li>
+<li>Left/right trigger: Left/right Shift</li>
+<li>Left/right grip: Left/right Ctrl or left/right Alt</li>
+<li>Rotate controller: Mouse up/down</li>
+</ul>
+<h2 id="operations">Operations</h2>
+<p>To select a panel, press the left grip shortly and then enter the left stick in the direction of the panel you wish to select.</p>
+<h3 id="operations-common-to-all-panels">Operations common to all panels</h3>
+<ul>
+<li>Left trigger short press: Play/Stop</li>
+<li>Left grip short press: Start panel selection</li>
+<li>Left stick: Move cursor</li>
+<li>Right stick ←→: Increase or decrease the value of an item</li>
+<li>Right stick ↑↓: Increase or decrease the value of an item significantly</li>
+</ul>
+<h3 id="operations-common-to-both-arrangement-and-edit-panels">Operations common to both Arrangement and Edit panels</h3>
+<ul>
+<li>Right grip: Delete value on cursor</li>
+<li>Right trigger long press: Get the value on the cursor</li>
+<li>Right trigger + Rotate right Controller: Increase or decrease the value according to the rotation</li>
+<li>Left grip + Right stick ←: Start/end range selection</li>
+<li>Left grip + Right stick ↓: Cut</li>
+<li>Left grip + Right stick →: Copy</li>
+<li>Left grip + Right stick ↑: Paste</li>
+<li>Left trigger + Rotate left controller: Move cursor according to rotation</li>
+<li>Left grip + Left trigger + Rotate left controller: Change zoom according to rotation</li>
+</ul>
+<h3 id="operations-in-arrangement-panel">Operations in Arrangement panel</h3>
+<ul>
+<li>Left grip + Left stick ←: Set the start of the loop section</li>
+<li>Left grip + Left stick →: Set the end of the loop section</li>
+<li>Left grip + Left stick ↓: Mute track</li>
+<li>Left grip + Left stick ↑: Solo track</li>
+<li>Right trigger short press: Select the pattern on or above the cursor and go to Edit panel</li>
+</ul>
+<h3 id="operations-in-edit-panel">Operations in Edit panel</h3>
+<ul>
+<li>Right trigger short press: Insert note off or effect command</li>
+</ul>
+<h2 id="settings-panel">Settings panel</h2>
+<p>Settings can be made for songs and patterns.</p>
+<p>Next to the pencil icon, the values previously written in the Arrangement and Edit panels are displayed.</p>
+<h3 id="setting-items">Setting items</h3>
+<ul>
+<li>BPM: Song tempo</li>
+<li>ZOOM (left side): Zoom in Arrangement panel</li>
+<li>PATTERN: Pattern to be edited</li>
+<li>INSTRUMENT: Instrument number used in the pattern</li>
+<li>ZOOM (right side): Zoom in Edit panel</li>
+<li>KEY: Transpose for note display only</li>
+<li>CHANNEL: Whether channel assignment is done automatically or manually (see below for details)</li>
+</ul>
+<h2 id="arrangement-panel">Arrangement panel</h2>
+<p>Patterns can be arranged on the timeline to create a song structure.</p>
+<p>At the top, the track number is displayed if the track is not muted, or "M" if the track is muted.
+Patterns are displayed as hexadecimal numbers.</p>
+<p>Songs are played and stopped at the cursor position in Arrangement panel.
+The loop section when playing a song is also specified in Arrangement panel.</p>
+<h2 id="edit-panel">Edit panel</h2>
+<p>The notes can be placed on the timeline to create a pattern.</p>
+<p>The instrument used in the performance will be the one specified on the settings panel.</p>
+<p>The pattern consists of 8 columns, and notes can be placed in each column.</p>
+<p>There are two types of notes: note-ons, which sound a note, and note-offs, which stop sounding a note.
+A note sounded in note-on will continue to sound until a note-off or another note-on arrives in the same column.</p>
+<p>Note-ons consist of pitch and velocity, with pitch displayed as a note name and octave, such as "C-4," and velocity displayed as a number from 00 to 7F in hexadecimal.
+Note-offs are displayed as "off".
+If you omit the velocity of a note, the velocity will be the same as if you had specified 7F.
+A note with an empty pitch and velocity only changes the velocity of the already sounding note.</p>
+<h3 id="effects-commands">Effects Commands</h3>
+<p>You can insert an effect command by briefly pressing the right trigger while the cursor is on velocity.
+Effect commands are commands to apply special effects to notes.
+Effect commands have an effect type and an effect amount, where the effect type is a single letter of the alphabet and the effect amount is a hexadecimal number from 0 to F.</p>
+<h4 id="effect-type">Effect Type</h4>
+<ul>
+<li>D (pitch slide Down): lowers the pitch of the note</li>
+<li>U (pitch slide Up): Raises the pitch of the note</li>
+<li>G (Glide): Smoothly changes the pitch of the note already sounded to the pitch of the note for which this effect is specified</li>
+</ul>
+<h4 id="effect-amount">Effect amount</h4>
+<p>The effect amount represents the speed of the pitch change.</p>
+<ul>
+<li>0: Stop pitch change for pitch up and pitch down, change the pitch to the note immediately for glide</li>
+<li>1: 1 semitone/quarter note</li>
+<li>2: 1.5 semitones/quarter note</li>
+<li>3: 2 semitones/quarter note</li>
+<li>4: 3 semitones/quarter note</li>
+<li>5: 4 semitones/quarter note</li>
+<li>6: 6 semitones/quarter note</li>
+<li>7: 8 semitones/quarter note</li>
+<li>8: 12 semitones/quarter note</li>
+<li>9: 16 semitones/quarter note</li>
+<li>A: 24 semitones/quarter note</li>
+<li>B: 32 semitones/quarter note</li>
+<li>C: 48 semitones/quarter note</li>
+<li>D: 64 semitones/quarter note</li>
+<li>E: 96 semitones/quarter note</li>
+<li>F: 128 semitones/quarter note</li>
+</ul>
+<h2 id="channel-assignment">Channel Assignment</h2>
+<p>In Fractone, the audio source to which the sound to be played is assigned is called a channel.
+Fractone has 16 channels, so up to 16 notes can be sounded simultaneously.</p>
+<p>When a note is played on the keyboard or when CHANNEL is set to AUTO on the sequencer's Settings panel, the note to be played is automatically assigned to an available channel.
+However, the effects used for tones can affect the sound even after the sound has finished sounding, and if tones with different effects are assigned to the same channel after sounding, the sound may have undesired effects.
+In such a case, you can specify the channel to be manually assigned to the sound by specifying CHANNEL to MANUAL in the Settings panel.</p>
+<p>When using manual channel assignment, the channel number assigned to notes played within a pattern placed on a track is the remainder of (track number + column number in the pattern) divided by 16.
+For example, a pattern placed on track 1 would be assigned to channels 1, 2, 3, ... from the left column, and a pattern placed on track 15 (F on the sequencer display) would be assigned to channels 15, 0, 1, ... from the left column.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,928 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="synthesizer.html">
+      
+      
+        <link rel="next" href="credits.html">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>シーケンサー - Fractone</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href="index.html" title="Fractone" class="md-header__button md-logo" aria-label="Fractone" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Fractone
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              シーケンサー
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="言語切り替え">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="sequencer.html" hreflang="ja" class="md-select__link">
+              日本語
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="en/sequencer.html" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Fractone" class="md-nav__button md-logo" aria-label="Fractone" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Fractone
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ホーム
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="updates.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    更新情報
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="introduction.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    はじめに
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="world-menu.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ワールドメニュー
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="synthesizer.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    シンセサイザー
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    シーケンサー
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="sequencer.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    シーケンサー
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      デスクトップでの操作
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      操作方法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="操作方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      全パネルで共通の操作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      アレンジパネルとエディットパネルで共通の操作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      アレンジパネルでの操作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      エディットパネルでの操作
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      設定パネル
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="設定パネル">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      設定項目
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      アレンジパネル
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      エディットパネル
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="エディットパネル">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      エフェクトコマンド
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="エフェクトコマンド">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      エフェクト種別
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      影響量
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      チャンネル割り当て
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="credits.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    クレジット
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      デスクトップでの操作
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      操作方法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="操作方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      全パネルで共通の操作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      アレンジパネルとエディットパネルで共通の操作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      アレンジパネルでの操作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      エディットパネルでの操作
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      設定パネル
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="設定パネル">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      設定項目
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      アレンジパネル
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      エディットパネル
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="エディットパネル">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      エフェクトコマンド
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="エフェクトコマンド">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      エフェクト種別
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      影響量
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      チャンネル割り当て
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">シーケンサー</h1>
+<p>シンセサイザーの左側にあるシーケンサー画面では、楽曲の打ち込みを行うことができます。</p>
+<p>FractoneではTrackerスタイルのシーケンサーを採用しています。
+シーケンサーの操作ではレーザーポインターなどは使わず、カーソルの移動と値の書き込みをコントローラーで行います。</p>
+<p>シーケンサーをインタラクトすると、両方のコントローラーの入力がシーケンサーに送られ、通常の移動操作ができなくなります。
+メニューボタンを押すとシーケンサーの入力を解除し、通常通り移動することができるようになります。</p>
+<p><img alt="Sequencer" src="images/sequencer.png" /></p>
+<p>シーケンサーには複数のパネルがあり、上側に設定パネル、左側にアレンジパネル、右側にエディットパネルがあります。
+これらのうち、選択中のパネルに対してコントローラーの入力が行われます。選択中のパネルには赤色の枠が表示されます。</p>
+<p>楽曲は、16個の「トラック」と64個の「パターン」からなります。
+パターンには時間軸上にノートを配置することができ、トラックには時間軸上にパターンを配置することができます。
+基本的に、楽曲の1つのフレーズをパターンとして、複数のパターンを組み合わせて楽曲の構成を作成します。
+トラックはアレンジ画面で作成し、パターンはエディット画面で作成します。</p>
+<h2 id="_2">デスクトップでの操作</h2>
+<p>デスクトップでは、VRの操作とキーボード操作は以下のように対応しています。</p>
+<ul>
+<li>左スティック: WASD</li>
+<li>右スティック: 方向キー</li>
+<li>左/右トリガー: 左/右Shift</li>
+<li>左/右グリップ: 左/右Ctrl または 左/右Alt</li>
+<li>コントローラーの回転: マウスの上下移動</li>
+</ul>
+<h2 id="_3">操作方法</h2>
+<p>パネルを選択するには、左グリップを短く押した後、左スティックを選択したいパネルの方向に入力します。</p>
+<h3 id="_4">全パネルで共通の操作</h3>
+<ul>
+<li>左トリガー 短押し: 再生/停止</li>
+<li>左グリップ 短押し: パネル選択を開始</li>
+<li>左スティック: カーソルの移動</li>
+<li>右スティック←→: 項目の値を増減</li>
+<li>右スティック↑↓: 項目の値を大きく増減</li>
+</ul>
+<h3 id="_5">アレンジパネルとエディットパネルで共通の操作</h3>
+<ul>
+<li>右グリップ: カーソル上の値を削除</li>
+<li>右トリガー 長押し: カーソル上の値を取得</li>
+<li>右トリガー + 右コントローラーを回転: 回転に応じて値を増減</li>
+<li>左グリップ + 右スティック←: 範囲選択の開始・終了</li>
+<li>左グリップ + 右スティック↓: カット</li>
+<li>左グリップ + 右スティック→: コピー</li>
+<li>左グリップ + 右スティック↑: ペースト</li>
+<li>左トリガー + 左コントローラーを回転: 回転に応じてカーソルを移動</li>
+<li>左グリップ + 左トリガー + 左コントローラーを回転: 回転に応じてズームを変更</li>
+</ul>
+<h3 id="_6">アレンジパネルでの操作</h3>
+<ul>
+<li>左グリップ + 左スティック←: ループ区間の開始を設定</li>
+<li>左グリップ + 左スティック→: ループ区間の終了を設定</li>
+<li>左グリップ + 左スティック↓: トラックをミュート</li>
+<li>左グリップ + 左スティック↑: トラックをソロにする</li>
+<li>右トリガー 短押し: カーソル上かそれより上にあるパターンを選択し、エディットパネルに移動</li>
+</ul>
+<h3 id="_7">エディットパネルでの操作</h3>
+<ul>
+<li>右トリガー 短押し: ノートオフまたはエフェクトコマンドを挿入</li>
+</ul>
+<h2 id="_8">設定パネル</h2>
+<p>曲やパターンに対する設定を行うことができます。</p>
+<p>鉛筆のアイコンの横には、アレンジパネルとエディットパネルで前回書き込んだ値が表示されています。</p>
+<h3 id="_9">設定項目</h3>
+<ul>
+<li>BPM: 曲のテンポ</li>
+<li>ZOOM (左側): アレンジパネルのズーム</li>
+<li>PATTERN: 編集するパターン</li>
+<li>INSTRUMENT: パターンで使用するインストゥルメント番号</li>
+<li>ZOOM (右側): エディットパネルのズーム</li>
+<li>KEY: ノートの表示のみに対してトランスポーズを行う</li>
+<li>CHANNEL: チャンネル割り当てを自動(AUTO)で行うか手動(MANUAL)で行うか (詳細は後述)</li>
+</ul>
+<h2 id="_10">アレンジパネル</h2>
+<p>パターンを時間軸上に配置し、曲の構成を作ることができます。</p>
+<p>上部には、トラックがミュートではない場合はトラック番号が、ミュートの場合は「M」が表示されます。
+パターンは16進数の番号で表示されます。</p>
+<p>楽曲の再生と停止はアレンジパネルのカーソルの位置から行われます。
+楽曲を再生する際のループ区間の指定もアレンジパネルで行います。</p>
+<h2 id="_11">エディットパネル</h2>
+<p>ノートを時間軸上に配置し、パターンを作成することができます。</p>
+<p>演奏で使用されるインストゥルメントは、設定パネル上で指定したものが使用されます。</p>
+<p>パターンは8つの列からなり、それぞれの列に対してノートを配置することができます。</p>
+<p>ノートには、音を鳴らすノートであるノートオンと、音を止めるノートであるノートオフがあります。
+ノートオンで鳴らされたノートは、同じ列にノートオフか別のノートオンが来るまで鳴り続けます。</p>
+<p>ノートオンはピッチとベロシティからなり、ピッチは「C-4」のように音名とオクターブとして表示され、ベロシティは16進数で00から7Fまでの数として表示されます。
+ノートオフは「off」と表示されます。
+ノートのベロシティを省略した場合、ベロシティは7Fを指定した場合と同じになります。
+ピッチが空でベロシティのみが存在するノートは、既に鳴らしているノートのベロシティを変更します。</p>
+<h3 id="_12">エフェクトコマンド</h3>
+<p>カーソルをベロシティに合わせた状態で右トリガーを短く押すと、エフェクトコマンドを挿入できます。
+エフェクトコマンドはノートに対して特殊な効果を与えるための命令です。
+エフェクトコマンドはエフェクト種別と影響量を持ち、エフェクト種別はアルファベット1文字、影響量は0からFまでの16進数で表示されます。</p>
+<h4 id="_13">エフェクト種別</h4>
+<ul>
+<li>D (ピッチスライドダウン): ノートのピッチを下げる</li>
+<li>U (ピッチスライドアップ): ノートのピッチを上げる</li>
+<li>G (グライド): 既に鳴っているノートのピッチから、このエフェクトが指定されたノートのピッチへ滑らかに変化させる</li>
+</ul>
+<h4 id="_14">影響量</h4>
+<p>影響量はピッチ変化の速度を表しています。</p>
+<ul>
+<li>0: ピッチアップ・ピッチダウンの場合はピッチ変化を止める、グライドの場合は即時そのノートへピッチを変更</li>
+<li>1: 1半音/四分音符</li>
+<li>2: 1.5半音/四分音符</li>
+<li>3: 2半音/四分音符</li>
+<li>4: 3半音/四分音符</li>
+<li>5: 4半音/四分音符</li>
+<li>6: 6半音/四分音符</li>
+<li>7: 8半音/四分音符</li>
+<li>8: 12半音/四分音符</li>
+<li>9: 16半音/四分音符</li>
+<li>A: 24半音/四分音符</li>
+<li>B: 32半音/四分音符</li>
+<li>C: 48半音/四分音符</li>
+<li>D: 64半音/四分音符</li>
+<li>E: 96半音/四分音符</li>
+<li>F: 128半音/四分音符</li>
+</ul>
+<h2 id="_15">チャンネル割り当て</h2>
+<p>Fractoneでは、鳴らす音が割り当てられる音源のことを「チャンネル」と呼びます。
+Fractoneは16個のチャンネルを持つため、最大16音まで同時に発音することができます。</p>
+<p>キーボードで音を鳴らす場合やシーケンサーの設定パネルでCHANNELをAUTOに設定した場合、鳴らす音は自動で空いているチャンネルに割り当てられます。
+しかし、音色に使われるエフェクトは発音終了後にも音声に影響を与えることがあり、発音後に異なるエフェクトを持つ音色が同じチャンネルに割り当てられた場合に、音に望ましくない効果が出ることがあります。
+その場合、設定パネルでCHANNELをMANUALに指定すれば、手動で音に割り当てられるチャンネルを指定することができます。</p>
+<p>手動チャンネル割り当てを使用する場合、トラックに配置されたパターン内で鳴らされるノートに割り当てられるチャンネル番号は、(トラック番号 + パターン内の列番号)を16で割った余りとなります。
+例えば、トラック番号1に置かれたパターンでは、左の列から1, 2, 3, ...のチャンネルに割り当てられ、トラック番号15 (シーケンサーの表示上ではF) に置かれたパターンでは、左の列から15, 0, 1, ...のチャンネルに割り当てられます。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>
