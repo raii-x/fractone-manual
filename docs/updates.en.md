@@ -1,6 +1,8 @@
 # Updates
 
 * 2025-07-15
+    * Fixed a problem where synchronized notes would remain sounding after note-off
+* 2025-07-15
     * Added save/load functionality using Persistence
     * Improved synchronization stability
     * Improved timing accuracy of world keyboard and MIDI input synchronization
