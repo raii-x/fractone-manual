@@ -1,7 +1,5 @@
 # Introduction
 
-This document was translated using machine translation and may contain inaccuracies.
-
 In this world, you can create sounds with the synthesizer, create a song with the sequencer, and play with the keyboard.
 Various settings are made in the world menu.
 
