@@ -68,7 +68,7 @@ Filters (FLT) and shapers (SHP) can be applied to the waveform.
         * NOTCH: Notch filter
     * CUTOFF: Cutoff frequency of the filter
     * RESONANCE: Resonance value of the filter
-* SHP1/SHP2: Shaper shaping frequency
+* SHP1/SHP2:
     * TYPE: Shaper type
         * SOFT CLIP: Smoothly clips the waveform at the top and bottom
         * HARD CLIP: Clips the waveform vertically above and below the peak
