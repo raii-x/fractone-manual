@@ -8,6 +8,9 @@ The sequencer does not use a laser pointer, but rather a controller to move the 
 When the sequencer is interacted with, both controller inputs are sent to the sequencer and normal movement operations are disabled.
 Pressing the menu button will release the sequencer input and allow normal movement.
 
+If the menu button does not work, check that the udon_menu action is assigned to the menu button in the SteamVR controller bindings.
+If you are unsure how to assign it, restore the controller bindings to their defaults.
+
 ![Sequencer](images/sequencer.png)
 
 The sequencer has several panels: Settings panel on the top, Arrangement panel on the left, and Edit panel on the right.
@@ -28,6 +31,7 @@ On the desktop, VR operation and keyboard operation correspond as follows.
 * Left/right trigger: Left/right Shift
 * Left/right grip: Left/right Ctrl or left/right Alt
 * Rotate controller: Mouse up/down
+* Menu button: Esc key
 
 ## Operations
 
@@ -40,6 +44,7 @@ To select a panel, press the left grip shortly and then enter the left stick in 
 * Left stick: Move cursor
 * Right stick ←→: Increase or decrease the value of an item
 * Right stick ↑↓: Increase or decrease the value of an item significantly
+* Menu button: Exit sequencer
 
 ### Operations common to both Arrangement and Edit panels
 
