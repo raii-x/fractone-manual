@@ -1,5 +1,11 @@
 # Updates
 
+* 2026-07-13
+    * Increased the amount of data that can be saved by accounting for the compressed file size when saving Persistence files
+    * Changed auto-saves to be saved to files
+    * Added a feature that assigns channels from external MIDI input to Instruments
+    * Added the ability to open the menu in VR by holding down on the right stick
+    * Fixed an issue where sequencer input would continue when a gamepad was connected
 * 2025-07-15
     * Fixed a problem where synchronized notes would remain sounding after note-off
 * 2025-07-15
