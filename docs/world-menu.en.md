@@ -2,7 +2,7 @@
 
 The World menu allows you to make settings related to worlds, synthesizers, and sequencers.
 
-* In VR, hold the right controller stick pushed up to display it.
+* In VR, hold the right controller stick pushed down to display it.
   Alternatively, grab the back of your head and it will appear at the position of your hand.
 * On the desktop, press the Q key to display it.
 
